@@ -13,7 +13,7 @@ import programm_1.heroes.Sniper;
 import programm_1.heroes.Spearman;
 import programm_1.heroes.Warlock;
 
-public class programm_2 
+public class Main_2 
 {
     public static void main( String[] args ) 
     {
