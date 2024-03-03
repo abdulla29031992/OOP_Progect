@@ -1,4 +1,4 @@
-package programm_5;
+package programm_6;
 
 import java.util.Collections;
 
@@ -55,12 +55,11 @@ public class ConsoleView
     }
 
 
-    private static String getChar( Point2D position )
+    private static String getChar( Point2D position ) 
     {
         String str = "| ";
         boolean alive = false;
-        for ( int i = 0; i < Main_5.SIDE_SIZE; i++ ) 
-        {
+        for ( int i = 0; i < Main_5.SIDE_SIZE; i++ ) {
             if ( Main_5.whiteSide.get( i ).getPos().isEqual( position ) ) 
             {
                 if( Main_5.whiteSide.get( i ).health == 0 )

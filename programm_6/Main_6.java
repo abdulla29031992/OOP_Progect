@@ -1,4 +1,4 @@
-package programm_5;
+package programm_6;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -6,7 +6,8 @@ import java.util.Scanner;
 import java.util.Collections;
 
 
-public class Main {
+public class Main_6 
+{
     public static final int SIDE_SIZE = 10;
     public static ArrayList<BaseHero> whiteSide;
     public static ArrayList<BaseHero> darkSide;
@@ -19,7 +20,7 @@ public class Main {
         Scanner iScanner = new Scanner( System.in );
         String input = "";
 
-        System.out.println( AnsiColors.ANSI_RED_BACKGR  + "PowerShell не хочет красить консоль" + AnsiColors.ANSI_RESET);
+        System.out.println( AnsiColors.ANSI_RED_BACKGR  + "PowerShell не хочет краситься" + AnsiColors.ANSI_RESET);
 
         while( true ) 
         {
@@ -45,8 +46,10 @@ public class Main {
 
         int x = 1;
         int y = 1;
-        for ( int i = 0; i < SIDE_SIZE; i++ ) {
-            switch ( new Random().nextInt( 4 ) ) {
+        for ( int i = 0; i < SIDE_SIZE; i++ ) 
+        {
+            switch ( new Random().nextInt( 4 ) ) 
+            {
                 case 0: whiteSide.add( new Peasant( getName(), x, y++ ) ); break;
                 case 1: whiteSide.add( new Rogue( getName(), x, y++ ) ); break;
                 case 2: whiteSide.add( new Sniper( getName(), x, y++ ) ); break;
@@ -88,8 +91,8 @@ public class Main {
             if ( whiteSide.contains( hero ) ) 
             {
                 hero.doStep( darkSide );
-            } 
-            else 
+            }
+             else 
             {
                 hero.doStep( whiteSide );
             }
